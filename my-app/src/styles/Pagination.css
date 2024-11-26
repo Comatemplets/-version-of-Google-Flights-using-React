@@ -1,0 +1,30 @@
+.page-item {
+  margin-bottom: 5px;
+}
+
+.page-item .page-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #ffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  color: #1a73e8;
+  cursor: pointer;
+  font-weight: 400;
+}
+.page-item .unavilable-page-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #40404046;
+  color: #ffff;
+  cursor: pointer;
+  cursor: not-allowed;
+  border-radius: 8px;
+}
+
+.page-item .page-link:hover,
+.page-item.active .page-link {
+  background-color: #1a73e8;
+  border: 1px solid #1a73e8;
+  color: white;
+}

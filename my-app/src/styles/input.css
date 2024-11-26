@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-content {
+  @apply top-0 w-64 pt-16  bg-white overflow-y-auto -left-full transition-all duration-300;
+}
+.sidebar-content.active-bar {
+  @apply left-0;
+}
+.nav-sidebar {
+  @apply w-full h-lvh flex flex-col gap-3 border-r justify-start items-start px-3 pl-0 pt-2;
+}
+
+.nav-sidebar a {
+  @apply ml-0 p-1.5 w-full hover:bg-gray-100 rounded-s-none  text-gray-600;
+}
+.nav-sidebar a svg {
+  @apply fill-gray-600;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.search-box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.active {
+  @apply bg-blue-50 text-Link;
+}
+
+.hotel-links li.active {
+  @apply text-Link bg-transparent border-b-4 border-Link;
+}
